@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Frasario Italiano–Coreano Docenti</title>
+
+<style>
+:root{
+ --kr-white:#ffffff; 
+ --kr-blue:#003478; 
+ --kr-red:#C60C30; 
+ --ink:#1a1a1a; 
+ --muted:#667389; 
+ --line:#e4e7ed; 
+ --card:#f8fafc;
+ --radius:14px;
+ --shadow:0 5px 18px rgba(0,0,0,.08);
+}
+body{
+ background:var(--kr-white);
+ color:var(--ink);
+ font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto;
+ margin:0;
+}
+header{
+ position:sticky;top:0;z-index:30;
+ background:var(--kr-white);
+ border-bottom:4px solid var(--kr-blue);
+ padding:18px 0;
+}
+.wrap{max-width:1150px;margin:auto;padding:0 16px;}
+h1{margin:0;font-size:clamp(20px,2.4vw,32px);color:var(--kr-blue);}
+.sub{margin-top:4px;color:var(--muted);font-size:15px}
+.toolbar{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.toolbar input{
+ flex:1;min-width:240px;border:1px solid var(--line);
+ padding:10px;border-radius:10px;background:#fff;
+}
+.toolbar button{
+ border:1px solid var(--line);border-radius:10px;background:#fff;
+ padding:10px 14px;font-weight:600;cursor:pointer;
+}
+.toolbar button:hover{border-color:var(--kr-blue);}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+nav a{
+ text-decoration:none;padding:6px 12px;border-radius:999px;
+ font-size:14px;color:var(--kr-blue);
+ border:1px solid var(--line);
+}
+nav a.active{background:#eaf2ff;border-color:var(--kr-blue);}
+section{
+ background:var(--card);
+ border:1px solid var(--line);
+ border-radius:var(--radius);
+ padding:18px;
+ margin:18px 0;
+ box-shadow:var(--shadow);
+ scroll-margin-top:120px;
+}
+h2{
+ margin:0 0 12px;font-size:22px;
+ color:var(--kr-blue);border-left:8px solid var(--kr-red);
+ padding-left:8px
+}
+table{width:100%;border-collapse:collapse}
+thead th{
+ background:#eef2fa;padding:8px;border-bottom:1px solid var(--line);
+ position:sticky;top:130px;z-index:5;text-align:left;
+}
+tbody td{padding:8px;border-bottom:1px solid var(--line)}
+tbody tr:nth-child(even) td{background:#fdfdff}
+.korean{font-family:"Noto Sans KR",system-ui;font-weight:500}
+.copyBtn{
+ font-size:12px;padding:6px 8px;border-radius:8px;cursor:pointer;
+ border:1px solid var(--line);background:#fff;
+}
+.copyBtn:hover{border-color:var(--kr-blue)}
+.hide-phon .phon-col,.hide-phon td.phon{display:none}
+#totop{
+ position:fixed;right:14px;bottom:14px;background:#fff;
+ border:1px solid var(--line);padding:10px;border-radius:10px;
+ cursor:pointer;box-shadow:var(--shadow)
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="wrap">
+<h1>Frasario Italiano–Coreano per Docenti<br><small>Incontro IIS MENDEL e delegazione coreana — 7 novembre 2025</small></h1>
+<p class="sub">Accoglienza • Didattica • Filiera Agroalimentare • Inclusione</p>
+<div class="toolbar">
+<input id="search" type="search" placeholder="Cerca frase…">
+<button id="togglePhon">Fonetica ON/OFF</button>
+</div>
+
+<nav>
+<a href="#accoglienza">Accoglienza</a>
+<a href="#riunioni">Riunioni</a>
+<a href="#didattica">Scuola-Lavoro</a>
+<a href="#trasformazione">Trasformazione</a>
+<a href="#serra">Serra</a>
+<a href="#biotec">Biotecnologie</a>
+<a href="#zootecnia">Zootecnia</a>
+<a href="#sicurezza">Sicurezza</a>
+<a href="#agenda">Agenda 2030</a>
+<a href="#inclusione">Inclusione</a>
+<a href="#bar">Bar/Mensa</a>
+<a href="#amministrazione">Amministrazione</a>
+</nav>
+</div>
+</header>
+
+<main class="wrap" id="content">
+
+<!-- ✅ ACCOGLIENZA ESTESA -->
+<section id="accoglienza"><h2>Accoglienza</h2>
+<table>
+<thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tbody>
+
+<tr><td>Benvenuti</td><td class="korean">환영합니다</td><td class="phon">hwan-yŏng-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Benvenuti nella nostra scuola</td><td class="korean">저희 학교에 오신 것을 환영합니다</td><td class="phon">jŏ-hui hak-gyo-e o-shin gŏ-sŭl hwan-yŏng-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Buongiorno</td><td class="korean">안녕하세요</td><td class="phon">an-nyeong-ha-se-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Siamo felici di accogliervi</td><td class="korean">여러분을 환영합니다</td><td class="phon">yŏ-rŏ-bun-ŭl hwan-yŏng-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Siamo onorati di avervi qui</td><td class="korean">여러분을 모시게 되어 영광입니다</td><td class="phon">yŏ-rŏ-bun-ŭl mo-shi-ge dweo yŏng-gwang-im-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Grazie per aver viaggiato fino a noi</td><td class="korean">먼 길 오시느라 수고하셨습니다</td><td class="phon">mŏn gil o-shi-nŭ-ra su-go-ha-shyŏt-sŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Avete riposato bene?</td><td class="korean">편히 쉬셨나요?</td><td class="phon">pyŏ-ni shwi-shyŏt-na-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Come vi trovate in Italia?</td><td class="korean">이탈리아는 어떠신가요?</td><td class="phon">i-tal-li-a-nŭn ŏ-ttŏ-shin-ga-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Vi state trovando bene?</td><td class="korean">좋은 경험이 되길 바랍니다</td><td class="phon">jo-ŭn gyeong-hŏm dwe-gil ba-ram-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Come è stato il viaggio?</td><td class="korean">여행은 어떠셨나요?</td><td class="phon">yŏ-hyŏng-ŭn ŏ-ttŏ-shyŏt-na-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Posso offrirvi un caffè?</td><td class="korean">커피 드릴까요?</td><td class="phon">kŏ-pi dŭ-ril-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Preferite tè o caffè?</td><td class="korean">차 드릴까요, 커피 드릴까요?</td><td class="phon">cha dŭ-ril-kka-yo, kŏ-pi dŭ-ril-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Vi accompagniamo volentieri</td><td class="korean">저희가 안내해 드리겠습니다</td><td class="phon">jŏ-hui-ga an-nae-hae dŭ-ri-gèt-sŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Iniziamo la visita?</td><td class="korean">견학을 시작할까요?</td><td class="phon">gyŏn-ha-gŭl shi-jak-hal-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Prima visitiamo i laboratori</td><td class="korean">먼저 실습실을 둘러보겠습니다</td><td class="phon">mŏn-jŏ shil-seub-shil dul-lŏ-bo-gèss-sŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Sentitevi come a casa</td><td class="korean">집처럼 편하게 지내세요</td><td class="phon">chip-chŏ-rŏm pyŏn-ha-ge ji-nae-se-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Siamo qui per voi</td><td class="korean">저희가 도와드리겠습니다</td><td class="phon">jŏ-hui-ga do-wa-dŭ-ri-gèss-sŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Se avete bisogno di qualcosa, dite pure</td><td class="korean">필요하시면 말씀해주세요</td><td class="phon">pil-yo-ha-shi-myŏn mal-sseum-hae-ju-se-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>È un onore avervi qui</td><td class="korean">여러분을 모시게 되어 영광입니다</td><td class="phon">yŏ-rŏ-bun-ŭl mo-shi-ge dweo yŏng-gwang-im-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>La vostra visita è preziosa</td><td class="korean">여러분의 방문은 소중합니다</td><td class="phon">yŏ-rŏ-bu-ne bang-mun-ŭn so-jung-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Possiamo aiutarvi in qualcosa?</td><td class="korean">무엇을 도와드릴까요?</td><td class="phon">mu-ŏ-sŭl do-wa-dŭ-ril-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Se serve, siamo qui</td><td class="korean">언제든 말씀하세요</td><td class="phon">ŏn-je-dŭn mal-sseum-ha-se-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Grazie per la vostra presenza</td><td class="korean">참석해 주셔서 감사합니다</td><td class="phon">cham-sŏk-hae ju-shyŏ-sŏ kam-sa-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Speriamo di rivedervi presto</td><td class="korean">또 뵙기를 바랍니다</td><td class="phon">tto bwep-gi-ril ba-ram-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Arrivederci e grazie</td><td class="korean">감사합니다, 또 뵙겠습니다</td><td class="phon">kam-sa-ham-ni-da, tto bwep-gè-sŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+</tbody>
+
+</tbody>
+</table>
+</section>
+
+<!-- ✅ RIUNIONI -->
+<section id="riunioni"><h2>Riunioni & Cooperazione</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tr><td>Iniziamo la riunione</td><td class="korean">회의를 시작하겠습니다</td><td class="phon">hwe-ui rŭl shi-jak-ha-gèss-sŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Grazie per il vostro contributo</td><td class="korean">기여해 주셔서 감사합니다</td><td class="phon">gi-yŏ-hae ju-shyŏ-sŏ kam-sa-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+</tbody></table></section>
+
+<section id="istituzionali"><h2>Relazioni Istituzionali</h2>
+<table>
+<thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+
+<tr><td>Siamo lieti di accogliervi nella nostra scuola</td><td class="korean">우리 학교에 오신 것을 환영합니다</td><td class="phon">u-ri hak-gyo-e o-shin gŏ-sŭl hwan-yŏng-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Questa visita è molto importante per noi</td><td class="korean">이번 방문은 저희에게 매우 중요합니다</td><td class="phon">i-bŏn bang-mun-eun jŏ-hui-e-ge mae-u jung-yo-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Desideriamo rafforzare la nostra collaborazione</td><td class="korean">저희는 협력을 강화하고자 합니다</td><td class="phon">jŏ-hui-neun hyŏb-ryŏk-eul gang-hwa-ha-go-ja ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>La vostra presenza è un onore per noi</td><td class="korean">여러분의 방문은 저희에게 큰 영광입니다</td><td class="phon">yŏ-rŏ-bu-ne bang-mun-eun yŏ-hui-e-ge kŭn yŏng-gwang</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Ringraziamo il vostro istituto per questa opportunità</td><td class="korean">귀 기관에 이 기회를 주셔서 감사합니다</td><td class="phon">gwi gi-gwan-e i gi-hwe-reul ju-shyŏ-sŏ kam-sa-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Crediamo molto nello scambio culturale e educativo</td><td class="korean">문화 및 교육 교류를 매우 중요하게 생각합니다</td><td class="phon">mun-hwa mit gyo-yuk gyo-ryu reul mae-u jung-yo-ha-ge</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Vorremmo sviluppare progetti comuni</td><td class="korean">공동 프로젝트를 개발하고자 합니다</td><td class="phon">gong-dong peu-ro-je-keu-teu reul gae-bal-ha-go-ja ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Siamo pronti a collaborare per futuri scambi</td><td class="korean">앞으로의 교류를 위해 협력할 준비가 되어 있습니다</td><td class="phon">a-peu-ro-e gyo-ryu reul wi-hae hyŏb-ryŏk-hal jun-bi</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Speriamo che la nostra partnership continui</td><td class="korean">우리의 파트너십이 계속되기를 바랍니다</td><td class="phon">u-ri-e pa-teu-nŏ-ship-i gye-sok-dwe-gi-ril ba-ram-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Confidiamo in un futuro percorso comune</td><td class="korean">함께 나아갈 미래를 기대합니다</td><td class="phon">ham-kke na-a-gal mi-rae reul gi-dae</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Grazie per la vostra collaborazione</td><td class="korean">협력해 주셔서 감사합니다</td><td class="phon">hyŏb-ryŏk-hae ju-shyŏ-sŏ kam-sa</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Ci auguriamo di rivederci presto</td><td class="korean">곧 다시 뵙기를 바랍니다</td><td class="phon">got da-shi bwep-gi-ril ba-ram-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+</tbody>
+</table>
+</section>
+
+
+<!-- ✅ FORMAZIONE SCUOLA-LAVORO -->
+<section id="didattica"><h2>Formazione Scuola-Lavoro (ex PCTO)</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tbody>
+
+<tr><td>Formazione Scuola–Lavoro</td><td class="korean">학교-기업 연계 교육</td><td class="phon">hak-gyo gi-ŏb yŏn-gye gyo-yuk</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Programma di inserimento nel mondo del lavoro</td><td class="korean">직업 세계 진입 프로그램</td><td class="phon">ji-gŏb se-gye ji-nip peu-ro-geu-raem</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Collaboriamo con aziende del territorio</td><td class="korean">지역 기업과 협력합니다</td><td class="phon">ji-yŏk gi-ŏb gwa hyŏb-ryŏk-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Aziende convenzionate</td><td class="korean">협약된 기업</td><td class="phon">hyŏb-yak-dwen gi-ŏb</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Stage in aziende agricole</td><td class="korean">농업 기업 현장 실습</td><td class="phon">nong-ŏp gi-ŏb hyŏn-jang shil-seub</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Esperienza sul campo</td><td class="korean">현장 경험</td><td class="phon">hyŏn-jang gyeong-hŏm</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Competenze pratiche</td><td class="korean">실무 능력</td><td class="phon">shil-mu neung-ryŏk</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Competenze trasversali</td><td class="korean">핵심 역량</td><td class="phon">haek-sim yŏng-ryang</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Orientamento professionale</td><td class="korean">진로 지도</td><td class="phon">jin-ro ji-do</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Simulazioni di situazioni lavorative</td><td class="korean">직무 상황 시뮬레이션</td><td class="phon">jik-mu sang-hwang si-myul-le-i-syŏn</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Attività in laboratorio e in azienda</td><td class="korean">실험실과 농장에서 활동합니다</td><td class="phon">shil-hŏm-shil gwa nong-jang-e-seo hwal-dong-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Progetti reali con partner esterni</td><td class="korean">외부 파트너와 실제 프로젝트를 진행합니다</td><td class="phon">oe-bu pa-teu-nŏ wa shil-je peu-ro-je-kt-reul ji-haeng-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Inserimento nel mondo del lavoro</td><td class="korean">취업 준비</td><td class="phon">chwi-ŏp jun-bi</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Costruiamo collegamenti tra scuola e imprese</td><td class="korean">학교와 기업 간 연계를 구축합니다</td><td class="phon">hak-gyo wa gi-ŏb gan yŏn-gye reul gu-chuk-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Rispettiamo rigide procedure di sicurezza</td><td class="korean">엄격한 안전 절차를 준수합니다</td><td class="phon">ŏm-gyŏk-han an-jŏn jŏl-cha reul jun-su-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+</tbody>
+
+</tbody></table></section>
+
+<section id="didattica-metodi"><h2>Metodi Didattici & Pratiche Educative</h2>
+<table>
+<thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+
+<tr><td>Usiamo una didattica laboratoriale</td><td class="korean">실습 중심 교육을 합니다</td><td class="phon">shil-seub jung-shim gyo-yuk</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Promuoviamo l’apprendimento pratico</td><td class="korean">실천적 학습을 강조합니다</td><td class="phon">shil-chŏn-jŏk hak-seub</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Favoriamo attività cooperative</td><td class="korean">협동 학습을 강조합니다</td><td class="phon">hyŏp-dong hak-seub</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Valutiamo competenze e crescita</td><td class="korean">역량과 성장을 평가합니다</td><td class="phon">yŏng-ryang gwa sŏng-jang</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Lavoriamo su progetti reali</td><td class="korean">실제 프로젝트를 진행합니다</td><td class="phon">shil-je peu-ro-je-kteu</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Gli studenti imparano facendo</td><td class="korean">학생들은 하면서 배웁니다</td><td class="phon">hak-saeng-deu-reun ha-myeon-seo bae-um-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Seguiamo un approccio interdisciplinare</td><td class="korean">융합 교육을 실천합니다</td><td class="phon">yung-hap gyo-yuk</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Usiamo tecnologie educative</td><td class="korean">교육 기술을 사용합니다</td><td class="phon">gyo-yuk gi-sul sa-yong</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Favoriamo autonomia e responsabilità</td><td class="korean">자율성과 책임감을 키웁니다</td><td class="phon">ja-yul-sŏng-gwa che-gim-gam</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Valorizziamo il lavoro di gruppo</td><td class="korean">팀워크를 중요하게 생각합니다</td><td class="phon">tim-wŏk reul jung-yo-ha-ge</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Sosteniamo l’apprendimento personalizzato</td><td class="korean">맞춤형 학습을 지원합니다</td><td class="phon">mat-chum-hyŏng hak-seub</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Monitoriamo i progressi degli studenti</td><td class="korean">학생 성장을 지속적으로 관찰합니다</td><td class="phon">hak-saeng sŏng-jang guan-chal</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Favoriamo esperienze concrete</td><td class="korean">구체적인 경험을 제공합니다</td><td class="phon">gu-che-jŏk-in gyeong-hŏm</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Lavoriamo insieme agli studenti</td><td class="korean">학생과 함께 배우며 일합니다</td><td class="phon">hak-saeng gwa ham-kke bae-u-myŏ il-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Promuoviamo l’autostima degli studenti</td><td class="korean">학생 자존감을 키웁니다</td><td class="phon">hak-saeng ja-jon-gam</td><td><button class="copyBtn">Copia</button></td></tr>
+
+</tbody>
+</table>
+</section>
+
+
+<!-- ✅ TRASFORMAZIONE -->
+<section id="trasformazione"><h2>Laboratori di Trasformazione</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tbody>
+
+<tr><td>Laboratorio di trasformazione</td><td class="korean">가공 실습실</td><td class="phon">ga-gong shil-seub-shil</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Caseificio didattico</td><td class="korean">유가공 실습실</td><td class="phon">yu-ga-gong shil-seub-shil</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Produciamo formaggi freschi</td><td class="korean">신선한 치즈를 만듭니다</td><td class="phon">shin-sŏn-han chi-jŭ reul man-dŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Produciamo yogurt</td><td class="korean">요거트를 만듭니다</td><td class="phon">yo-gŏ-teu reul man-dŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Produciamo panna e burro</td><td class="korean">크림과 버터를 만듭니다</td><td class="phon">kŭ-rim gwa bŏ-tŏ reul man-dŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Produciamo vino scolastico</td><td class="korean">학교 와인을 생산합니다</td><td class="phon">hak-gyo wa-in reul saeng-san-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Vendemmia e vinificazione</td><td class="korean">포도 수확과 와인 양조</td><td class="phon">po-do su-hwak gwa wa-in yang-jo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Produciamo marmellate</td><td class="korean">잼을 만듭니다</td><td class="phon">jaem reul man-dŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Produciamo succhi e confetture</td><td class="korean">주스와 콩피튀르를 만듭니다</td><td class="phon">ju-seu wa kong-pi-twi-reu reul man-dŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Cosmetici naturali</td><td class="korean">천연 화장품</td><td class="phon">chŏn-yŏn hwa-jang-pum</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Oli essenziali e saponi</td><td class="korean">에센셜 오일과 비누</td><td class="phon">e-sen-shyal o-il gwa bi-nu</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Prodotti per il corpo</td><td class="korean">바디 케어 제품</td><td class="phon">ba-di ke-o je-pum</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Controllo qualità dei prodotti</td><td class="korean">제품 품질 관리</td><td class="phon">je-pum pum-jil gwan-ri</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Igiene alimentare</td><td class="korean">식품 위생</td><td class="phon">shik-pum wi-saeng</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Tracciabilità della filiera</td><td class="korean">식품 이력 추적</td><td class="phon">shik-pum i-ryŏk chu-jŏk</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Produciamo prodotti locali</td><td class="korean">지역 특산품을 만듭니다</td><td class="phon">ji-yŏk teuk-san-pum reul man-dŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Vendiamo i nostri prodotti</td><td class="korean">학생들이 만든 제품을 판매합니다</td><td class="phon">hak-saeng-dŭ-ri man-dŭn je-pum reul pan-mae-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Mercatino scolastico di Natale</td><td class="korean">학교 크리스마스 장터</td><td class="phon">hak-gyo keu-ri-seu-ma-seu jang-tŏ</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Esposizione dei prodotti degli studenti</td><td class="korean">학생 작품 전시</td><td class="phon">hak-saeng jak-pum jŏn-shi</td><td><button class="copyBtn">Copia</button></td></tr>
+
+</tbody>
+
+</tbody></table></section>
+
+<!-- ✅ SERRA -->
+<section id="serra"><h2>Serra & Produzioni Naturali</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tbody>
+
+<tr><td>Serra didattica</td><td class="korean">교육 온실</td><td class="phon">gyo-yuk on-shil</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Lavoriamo nella serra scolastica</td><td class="korean">학교 온실에서 작업합니다</td><td class="phon">hak-gyo on-shil-e-seo ja-gŏp-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Coltiviamo piante ornamentali</td><td class="korean">관상 식물을 재배합니다</td><td class="phon">gwan-sang shik-mul jae-bae-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Coltiviamo fiori stagionali</td><td class="korean">계절 꽃을 재배합니다</td><td class="phon">gye-jŏl kkot-eul jae-bae-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Produciamo stelle di Natale</td><td class="korean">포인세티아를 재배합니다</td><td class="phon">po-in-se-ti-a reul jae-bae-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Curiamo piante aromatiche</td><td class="korean">허브를 기릅니다</td><td class="phon">hŏ-bŭ reul gi-rŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Sementi e trapianti</td><td class="korean">파종과 이식</td><td class="phon">pa-jong gwa i-shik</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Irrigazione controllata</td><td class="korean">제어된 관개</td><td class="phon">je-ŏ-dwen gwan-gae</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Sistemi idroponici</td><td class="korean">수경 재배 시스템</td><td class="phon">su-gyŏng jae-bae si-seu-tem</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Fertilizzazione naturale</td><td class="korean">천연 비료 사용</td><td class="phon">chŏn-yŏn bi-ryo sa-yong</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Raccolta delle piante</td><td class="korean">식물 수확</td><td class="phon">shik-mul su-hwak</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Uso del compost</td><td class="korean">퇴비 사용</td><td class="phon">twe-bi sa-yong</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Riciclo dei materiali organici</td><td class="korean">유기물 재활용</td><td class="phon">yu-gi-mul jae-hwa-ryong</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Vendiamo i nostri fiori</td><td class="korean">학생들이 기른 꽃을 판매합니다</td><td class="phon">hak-saeng-deu-ri gi-rŭn kkot-eul pan-mae-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>I nostri studenti preparano le composizioni floreali</td><td class="korean">학생들이 꽃 장식을 만듭니다</td><td class="phon">hak-saeng-deu-ri kkot jang-shik-eul man-dŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Produciamo piante per il mercatino scolastico</td><td class="korean">학교 장터를 위한 식물을 재배합니다</td><td class="phon">hak-gyo jang-tŏ reul wi-han shik-mul jae-bae-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Coltivazione sostenibile</td><td class="korean">지속가능 재배</td><td class="phon">ji-sok-ga-neung jae-bae</td><td><button class="copyBtn">Copia</button></td></tr>
+
+</tbody>
+
+</tbody></table></section>
+
+<!-- ✅ BIOTEC -->
+<section id="biotec"><h2>Biotecnologie</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tr><td>Laboratorio di biotecnologie</td><td class="korean">생명공학 실험실</td><td class="phon">saeng-myŏng-gong-hak shil-hŏm-shil</td><td><button class="copyBtn">Copia</button></td></tr>
+</tbody></table></section>
+
+<!-- ✅ ZOOTECNIA -->
+<section id="zootecnia"><h2>Zootecnia & Latte</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tr><td>Caseificio didattico</td><td class="korean">유가공 실습실</td><td class="phon">yu-ga-gong shil-seub-shil</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Benessere animale</td><td class="korean">동물 복지</td><td class="phon">dong-mul bok-ji</td><td><button class="copyBtn">Copia</button></td></tr>
+</tbody></table></section>
+
+<!-- ✅ SICUREZZA -->
+<section id="sicurezza"><h2>Sicurezza</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tr><td>DPI obbligatori</td><td class="korean">보호 장비 필수</td><td class="phon">bo-ho jang-bi pil-su</td><td><button class="copyBtn">Copia</button></td></tr>
+</tbody></table></section>
+
+<!-- ✅ AGENDA 2030 -->
+<section id="agenda"><h2>Agenda 2030</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tbody>
+
+<tr><td>Agenda 2030</td><td class="korean">2030 아젠다</td><td class="phon">i-sam-gong a-jen-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Sviluppo sostenibile</td><td class="korean">지속가능발전</td><td class="phon">ji-sok-ga-neung bal-jeon</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Educazione alla sostenibilità</td><td class="korean">지속가능 교육</td><td class="phon">ji-sok-ga-neung gyo-yuk</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Cittadinanza globale</td><td class="korean">세계 시민 의식</td><td class="phon">se-gye shi-min ui-shik</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Tutela dell’ambiente</td><td class="korean">환경 보호</td><td class="phon">hwan-gyeong bo-ho</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Protezione della biodiversità</td><td class="korean">생물 다양성 보호</td><td class="phon">saeng-mul da-yang-sŏng bo-ho</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Riduzione degli sprechi</td><td class="korean">낭비 줄이기</td><td class="phon">nang-bi ju-ri-gi</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Economia circolare</td><td class="korean">순환 경제</td><td class="phon">sun-hwan gyeong-je</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Energia rinnovabile</td><td class="korean">재생 에너지</td><td class="phon">jae-saeng e-ne-ji</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Uso responsabile dell’acqua</td><td class="korean">물 절약</td><td class="phon">mul jŏ-ryak</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Agricoltura sostenibile</td><td class="korean">지속가능 농업</td><td class="phon">ji-sok-ga-neung nong-ŏp</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Riduzione delle emissioni</td><td class="korean">배출 감소</td><td class="phon">bae-chul gam-so</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Educazione ambientale</td><td class="korean">환경 교육</td><td class="phon">hwan-gyeong gyo-yuk</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Responsabilità sociale</td><td class="korean">사회적 책임</td><td class="phon">sa-hwe-jŏk che-gim</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Benessere delle comunità</td><td class="korean">지역 사회 복지</td><td class="phon">ji-yŏk sa-hwe bok-ji</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Collaborazione internazionale</td><td class="korean">국제 협력</td><td class="phon">guk-je hyŏb-ryŏk</td><td><button class="copyBtn">Copia</button></td></tr>
+
+</tbody>
+</tbody></table></section>
+
+<!-- ✅ INCLUSIONE -->
+<section id="inclusione"><h2>Inclusione</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tbody>
+
+<tr><td>Inclusione scolastica</td><td class="korean">포용적 교육</td><td class="phon">po-yong-jeok gyo-yuk</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Lavoriamo con studenti con diverse abilità</td><td class="korean">다양한 능력을 가진 학생들과 함께합니다</td><td class="phon">da-yang-han neung-ryŏg-eul ga-jin hak-saeng-deul gwa ham-kke-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Promuoviamo una scuola per tutti</td><td class="korean">모든 학생을 위한 학교를 추구합니다</td><td class="phon">mo-deun hak-saeng-eul wi-han hak-gyo reul chu-gu-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Docenti di sostegno</td><td class="korean">특수 교육 교사</td><td class="phon">teuk-su gyo-yuk gyo-sa</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Collaboriamo con educatori specialisti</td><td class="korean">전문 교육 지원 인력과 협력합니다</td><td class="phon">jŏn-mun gyo-yuk ji-wŏn in-ryŏk gwa hyŏb-ryŏk-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Personalizziamo i percorsi educativi</td><td class="korean">개별화된 교육 과정을 제공합니다</td><td class="phon">gae-byeol-hwa-dwen gyo-yuk gwa-jŏng reul je-gong-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Piani educativi individualizzati</td><td class="korean">개별 맞춤형 교육 계획</td><td class="phon">gae-byeol mat-chum-hyŏng gyo-yuk gye-hoek</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Laboratori pratici per favorire l’autonomia</td><td class="korean">자립을 돕는 실습 활동을 합니다</td><td class="phon">ja-rip-eul dom-neun shil-seub hwal-dong</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Attività manuali e agricole inclusive</td><td class="korean">포용적 농업 및 실습 활동을 진행합니다</td><td class="phon">po-yong-jeok nong-ŏp mit shil-seub hwal-dong</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Favoriamo la partecipazione di tutti</td><td class="korean">모든 학생의 참여를 장려합니다</td><td class="phon">mo-deun hak-saeng-e chʰam-yeo reul jang-ryŏ-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Crediamo nel valore della diversità</td><td class="korean">다양성의 가치를 소중히 여깁니다</td><td class="phon">da-yang-sŏng-e ga-chi reul so-jung-hi yŏ-gim-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Ogni studente ha un potenziale unico</td><td class="korean">각 학생은 고유한 잠재력을 가지고 있습니다</td><td class="phon">gak hak-saeng-eun go-yu-han jam-jae-ryŏk</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Supportiamo lo sviluppo personale e sociale</td><td class="korean">개인 및 사회적 성장을 지원합니다</td><td class="phon">gae-in mit sa-hwe-jŏk sŏng-jang</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Incoraggiamo l’autonomia quotidiana</td><td class="korean">일상 속 자립을 장려합니다</td><td class="phon">il-sang sok ja-rip reul jang-ryŏ-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Promuoviamo attività di vita pratica</td><td class="korean">생활 기술 활동을 진행합니다</td><td class="phon">saeng-hwal gi-sul hwal-dong</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Collaboriamo con le famiglie</td><td class="korean">가족과 긴밀히 협력합니다</td><td class="phon">ga-jok gwa gin-mil-hi hyŏb-ryŏk-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Creiamo un clima scolastico accogliente</td><td class="korean">따뜻하고 포용적인 학교 문화를 만들고 있습니다</td><td class="phon">tta-tŭt-ha-go po-yong-jeok-in hak-gyo mun-hwa</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Promuoviamo empatia e rispetto</td><td class="korean">공감과 존중을 강조합니다</td><td class="phon">gong-gam gwa jon-jung</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Valorizziamo abilità pratiche e relazionali</td><td class="korean">실무 및 사회적 기술을 강화합니다</td><td class="phon">shil-mu mit sa-hwe-jŏk gi-sul</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Inclusione è parte identitaria del nostro istituto</td><td class="korean">포용성은 우리 학교의 정체성입니다</td><td class="phon">po-yong-sŏng-eun u-ri hak-gyo-ui jŏng-che-sŏng</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Laboratori di creatività e manualità</td><td class="korean">창의적이고 손으로 하는 실습을 진행합니다</td><td class="phon">chang-ui-jeo-gi-go son-eu-ro ha-neun shil-seub</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Usiamo attività creative per favorire l'inclusione</td><td class="korean">포용을 위해 창의적 활동을 활용합니다</td><td class="phon">po-yong-eul wi-hae chang-ui-jeok hwal-dong</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Laboratori di arte e decorazioni floreali</td><td class="korean">꽃 장식 및 예술 활동을 진행합니다</td><td class="phon">kkot jang-shik mit ye-sul hwal-dong</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Attività in serra pensate anche per studenti con fragilità</td><td class="korean">온실 활동은 취약 학생들을 위해 설계되었습니다</td><td class="phon">on-shil hwal-dong-eun chwi-yak hak-saeng-deu-reul wi-hae sŏl-gye</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Coltivazione e cura delle piante per sviluppare autonomia</td><td class="korean">식물 재배와 관리를 통해 자립 능력을 키웁니다</td><td class="phon">shik-mul jae-bae wa gwan-ri reul tong-hae ja-rip neung-ryŏk</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Progetti inclusivi legati alla natura e alla campagna</td><td class="korean">자연과 농업을 활용한 포용 프로그램을 운영합니다</td><td class="phon">ja-yeon gwa nong-ŏp-eul hwal-yong-han po-yong peu-ro-geu-raem</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Lavoriamo con cooperative del territorio</td><td class="korean">지역 협동조합과 협력합니다</td><td class="phon">ji-yŏk hyŏp-dong-jo-hap gwa hyŏb-ryŏk-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Collaboriamo con servizi educativi e sociali</td><td class="korean">교육 및 사회 복지 기관과 협력합니다</td><td class="phon">gyo-yuk mit sa-hwe bok-ji gi-gwan gwa hyŏb-ryŏk</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Progetti con associazioni e fondazioni locali</td><td class="korean">지역 단체 및 재단과 함께 프로젝트를 진행합니다</td><td class="phon">ji-yŏk dan-che mit jae-dan gwa ham-kke</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Sosteniamo la partecipazione nelle attività comunitarie</td><td class="korean">지역 사회 활동 참여를 장려합니다</td><td class="phon">ji-yŏk sa-hwe hwal-dong cham-yeo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+
+</tbody>
+
+</tbody></table></section>
+
+<!-- ✅ BAR & MENSA -->
+<section id="bar"><h2>Bar & Mensa</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tbody>
+
+<tr><td>Benvenuti alla nostra mensa scolastica</td><td class="korean">우리 학교 식당에 오신 것을 환영합니다</td><td class="phon">u-ri hak-gyo shik-dang-e o-shin gŏ-sŭl hwan-yŏng-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Possiamo offrirvi un caffè?</td><td class="korean">커피 드릴까요?</td><td class="phon">kŏ-pi dŭ-ril-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Preferite espresso o cappuccino?</td><td class="korean">에스프레소로 드릴까요, 카푸치노로 드릴까요?</td><td class="phon">e-seu-peu-re-sso-ro dŭ-ril-kka-yo, ka-pu-chi-no-ro dŭ-ril-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Vuole una brioche?</td><td class="korean">브리오슈 드릴까요?</td><td class="phon">beu-ri-o-syu dŭ-ril-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Preferisce qualcosa di salato?</td><td class="korean">짭짤한 것 드릴까요?</td><td class="phon">jjab-jjal-han gŏt dŭ-ril-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Vuole una focaccia?</td><td class="korean">포카차 드릴까요?</td><td class="phon">po-ka-cha dŭ-ril-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Pizza o panino?</td><td class="korean">피자 드릴까요, 샌드위치 드릴까요?</td><td class="phon">pi-ja dŭ-ril-kka-yo, sen-deu-wi-chi dŭ-ril-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Acqua naturale o frizzante?</td><td class="korean">생수요, 탄산수요?</td><td class="phon">saeng-su-yo, tan-san-su-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Prenotiamo un tavolo per voi</td><td class="korean">자리를 준비했습니다</td><td class="phon">ja-ri-reul jun-bi-haet-sŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Il pranzo è pronto</td><td class="korean">점심이 준비되었습니다</td><td class="phon">jŏm-shi-mi jun-bi-dweot-sŭm-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Questo piatto è tipico italiano</td><td class="korean">이탈리아 전통 요리입니다</td><td class="phon">i-tal-li-a jŏn-tong yo-ri-im-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Questi prodotti sono dei nostri studenti</td><td class="korean">학생들이 만든 제품입니다</td><td class="phon">hak-saeng-dŭ-ri man-dŭn je-pum-im-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Assaggi pure</td><td class="korean">드셔 보세요</td><td class="phon">dŭ-syŏ bo-se-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Buon appetito</td><td class="korean">맛있게 드세요</td><td class="phon">ma-shit-ge dŭ-se-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>In Italia il caffè è un momento sociale</td><td class="korean">이탈리아에서는 커피 시간이 매우 중요합니다</td><td class="phon">i-tal-li-a-e-sŏn kŏ-pi shi-gan-i mae-u jung-yo-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Il nostro pane è fresco</td><td class="korean">우리 빵은 신선합니다</td><td class="phon">u-ri ppang-eun shin-sŏn-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+<tr><td>Usiamo olio extravergine di oliva</td><td class="korean">엑스트라 버진 올리브 오일을 사용합니다</td><td class="phon">ek-seu-teu-ra bŏ-jin o-li-bŭ o-il reul sa-yong-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Il vino è prodotto nel nostro istituto</td><td class="korean">와인은 우리 학교에서 생산됩니다</td><td class="phon">wa-in nŭn u-ri hak-gyo-e-seo saeng-san-dwen-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Questa è una degustazione didattica</td><td class="korean">이것은 교육용 시음입니다</td><td class="phon">i-gŏ-sŭn gyo-yuk-yong shi-eum-im-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Che ne pensate della nostra cucina?</td><td class="korean">저희 음식이 어떠신가요?</td><td class="phon">jŏ-hui eum-shik-i ŏ-ttŏ-shin-ga-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+</tbody>
+
+</tbody></table></section>
+
+<!-- ✅ AMMINISTRAZIONE -->
+<section id="amministrazione"><h2>Amministrazione</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tr><td>Segreteria</td><td class="korean">행정실</td><td class="phon">haeng-jeong-shil</td><td><button class="copyBtn">Copia</button></td></tr>
+</tbody>
+</table>
+</section>
+</main>
+
+<button id="totop">▲</button>
+
+<script>
+togglePhon.onclick=()=>content.classList.toggle("hide-phon");
+search.oninput=()=>{const q=search.value.toLowerCase();
+document.querySelectorAll("tbody tr").forEach(tr=>{
+ tr.style.display = tr.innerText.toLowerCase().includes(q) ? "" : "none";
+});
+};
+document.querySelectorAll(".copyBtn").forEach(btn=>{
+ btn.onclick=async()=>{
+  const txt = btn.closest("tr").querySelector(".korean").innerText.trim();
+  await navigator.clipboard.writeText(txt);
+  btn.textContent="✓";
+  setTimeout(()=>btn.textContent="Copia",800);
+ };
+});
+totop.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+</script>
+
+<section id="conversazione"><h2>Conversazione Educata & Accoglienza</h2>
+<table>
+<thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+
+<tr><td>Benvenuti ancora una volta</td><td class="korean">다시 한번 환영합니다</td><td class="phon">da-shi han-bŏn hwan-yŏng-ham-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Come state? Vi trovate bene da noi?</td><td class="korean">잘 지내고 계신가요?</td><td class="phon">jal ji-nae-go gye-shin-ga-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Com'è stato il viaggio?</td><td class="korean">여행은 어떠셨나요?</td><td class="phon">yŏ-haeng-eun ŏ-ttŏ-shyŏn-na-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Possiamo aiutarvi in qualcosa?</td><td class="korean">도와드릴 일이 있을까요?</td><td class="phon">do-wa dŭ-ril il-i i-sseul-kka-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Vi serve un accompagnamento?</td><td class="korean">안내가 필요하신가요?</td><td class="phon">an-nae-ga pil-yo-ha-shin-ga-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Questa è la vostra sala</td><td class="korean">여기가 여러분을 위한 방입니다</td><td class="phon">yŏ-gi-ga yŏ-rŏ-bu-neul wi-han bang-im-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Gradite accomodarvi?</td><td class="korean">편히 앉으세요</td><td class="phon">pyŏn-hi anj-eu-se-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Se avete bisogno, siamo qui</td><td class="korean">필요하시면 언제든 말씀해주세요</td><td class="phon">pil-yo-ha-shi-myon ŏn-je-deun mal-sseum-hae-ju-se-yo</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Vi accompagneremo durante la visita</td><td class="korean">방문 동안 안내해 드리겠습니다</td><td class="phon">bang-mun dongan an-nae-hae dŭ-ri-ge-sseup-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Questa parte dell’istituto è dedicata ai laboratori</td><td class="korean">이 구역은 실습 공간입니다</td><td class="phon">i gu-yŏg-eun shil-seub gong-gan-im-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Ci farebbe piacere conoscere le vostre pratiche</td><td class="korean">여러분의 경험을 듣고 싶습니다</td><td class="phon">yŏ-rŏ-bu-ne gyeong-hŏm-eul dŭt-go ship-seup-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>È molto interessante</td><td class="korean">매우 흥미롭습니다</td><td class="phon">mae-u heung-mi-rop-seup-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Speriamo di rivedervi presto</td><td class="korean">곧 다시 뵙기를 바랍니다</td><td class="phon">got da-shi bwep-gi-ril ba-ram-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>È stato un grande piacere avervi con noi</td><td class="korean">함께해 주셔서 큰 기쁨이었습니다</td><td class="phon">ham-kke-hae ju-shyŏ-sŏ kŭn gi-ppeum-iŏs-seup-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Vi auguriamo un buon soggiorno in Italia</td><td class="korean">이탈리아에서 즐거운 시간을 보내시길 바랍니다</td><td class="phon">i-tal-li-a-e-seo jeul-geo-un shi-gan-eul bo-nae-shi-gil</td><td><button class="copyBtn">Copia</button></td></tr>
+
+<tr><td>Se avete domande, siamo felici di rispondere</td><td class="korean">질문이 있으시면 기꺼이 답변드리겠습니다</td><td class="phon">jil-mun-i i-sseu-shi-myon gi-kkeo-i dap-byon-deu-ri-ge-sseup-ni-da</td><td><button class="copyBtn">Copia</button></td></tr>
+
+</tbody>
+</table>
+</section>
+</section>
+
+<!-- ✅ FOOTER -->
+<footer class="site-footer" role="contentinfo">© App creata dall’IIS MENDEL di Villa Cortese (MI)</footer>
+
+</main>
+
+<button id="totop">▲</button>
+
+<script>
+togglePhon.onclick=()=>content.classList.toggle("hide-phon");
+search.oninput=()=>{const q=search.value.toLowerCase();
+document.querySelectorAll("tbody tr").forEach(tr=>{
+ tr.style.display = tr.innerText.toLowerCase().includes(q) ? "" : "none";
+});
+};
+document.querySelectorAll(".copyBtn").forEach(btn=>{
+ btn.onclick=async()=>{
+  const txt = btn.closest("tr").querySelector(".korean").innerText.trim();
+  await navigator.clipboard.writeText(txt);
+  btn.textContent="✓";
+  setTimeout(()=>btn.textContent="Copia",800);
+ };
+});
+totop.onclick=()=>scrollTo({top:0,behavior:"smooth"});
+</script>
+
+<style>
+.site-footer{
+ max-width:1150px;
+ margin:24px auto 72px;
+ padding:12px 16px;
+ color:var(--muted);
+ border-top:3px solid var(--kr-blue);
+ text-align:center;
+ font-size:14px;
+}
+</style>
+
+</body>
+</html>
+
+
+
+</body>
+</html>
