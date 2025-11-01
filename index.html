@@ -137,6 +137,17 @@ tbody tr:nth-child(even) td{background:#fdfdff}
 }
 </style>
 
+
+<style>
+/* Disable sticky table header in landscape */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  thead th {
+    position: static !important;
+    top: auto !important;
+  }
+}
+</style>
+
 </head>
 
 <body>
