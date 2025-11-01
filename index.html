@@ -114,6 +114,29 @@ tbody tr:nth-child(even) td{background:#fdfdff}
 }
 
 </style>
+
+<style>
+/* ====== MOBILE LANDSCAPE COMPACT (auto‑added) ====== */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  body { padding-top: 170px !important; }
+  header { padding: 6px 0 !important; }
+  h1 { font-size: 16px !important; line-height: 1.2 !important; margin: 0 !important; }
+  h1 br { display: none !important; }
+  .sub { display: none !important; }          /* nasconde il sottotitolo in landscape */
+  nav { margin-top: 6px !important; gap: 6px !important; }
+  nav a { padding: 4px 8px !important; font-size: 12px !important; border-radius: 12px !important; }
+  .toolbar { margin-top: 6px !important; gap: 6px !important; }
+  .toolbar input { padding: 6px 8px !important; font-size: 12px !important; }
+  .toggle-phon { padding: 6px 10px !important; font-size: 12px !important; }
+  thead th { top: 170px !important; }         /* allinea header tabella allo spazio extra */
+  section { scroll-margin-top: 120px !important; }
+}
+/* Extra safety on small landscape widths */
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  table { font-size: 0.95em; }
+}
+</style>
+
 </head>
 
 <body>
