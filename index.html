@@ -82,6 +82,37 @@ tbody tr:nth-child(even) td{background:#fdfdff}
  border:1px solid var(--line);padding:10px;border-radius:10px;
  cursor:pointer;box-shadow:var(--shadow)
 }
+
+/* ───────────────────
+   FIX MOBILE STICKY HEADER
+   ─────────────────── */
+@media (max-width:768px){
+  thead th{
+    top: 150px !important;
+  }
+}
+
+/* ───────────────────
+   TOGGLE PHONETICA ELEGANTE
+   ─────────────────── */
+.toggle-phon {
+  border-radius: 50px;
+  padding: 10px 18px;
+  background: var(--kr-blue);
+  color: white;
+  border: none;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: .25s;
+}
+.toggle-phon.off {
+  background: #e0e6ef;
+  color: var(--ink);
+}
+.toggle-phon:hover{
+  opacity:.9;
+}
+
 </style>
 </head>
 
@@ -93,7 +124,7 @@ tbody tr:nth-child(even) td{background:#fdfdff}
 <p class="sub">Accoglienza • Didattica • Filiera Agroalimentare • Inclusione</p>
 <div class="toolbar">
 <input id="search" type="search" placeholder="Cerca frase…">
-<button id="togglePhon">Fonetica ON/OFF</button>
+<button id="togglePhon" class="toggle-phon off">Fonetica</button>
 </div>
 
 <nav>
@@ -511,119 +542,25 @@ tbody tr:nth-child(even) td{background:#fdfdff}
 </tbody></table></section>
 
 <!-- ✅ AMMINISTRAZIONE -->
-<section id="amministrazione" class="section-block">
-    <h2>Amministrazione e segreteria</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Italiano</th>
-                <th>한국어</th>
-                <th>Fonetica</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-
-            <tr>
-                <td>Segreteria</td>
-                <td class="korean">행정실</td>
-                <td class="phon">haeng-jeong-shil</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Segreteria didattica</td>
-                <td class="korean">학사 행정실</td>
-                <td class="phon">hak-sa haeng-jeong-shil</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Segreteria amministrativa</td>
-                <td class="korean">행정 사무실</td>
-                <td class="phon">haeng-jeong sa-mu-shil</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Ufficio Dirigente</td>
-                <td class="korean">교장실</td>
-                <td class="phon">gyo-jang-shil</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Ufficio della vicepresidenza</td>
-                <td class="korean">부교장실</td>
-                <td class="phon">bu-gyo-jang-shil</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Direttore dei Servizi Generali e Amministrativi (DSGA)</td>
-                <td class="korean">총무 행정 관리자</td>
-                <td class="phon">chong-mu haeng-jeong gwan-ri-ja</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Ufficio DSGA</td>
-                <td class="korean">총무 행정 관리자 사무실</td>
-                <td class="phon">chong-mu haeng-jeong gwan-ri-ja sa-mu-shil</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Personale ATA (Assistenti Tecnici e Amministrativi)</td>
-                <td class="korean">교육·행정·기술 지원 직원</td>
-                <td class="phon">gyo-yuk · haeng-jeong · gi-sul ji-won ji-gwon</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Assistenti tecnici</td>
-                <td class="korean">기술 지원 직원</td>
-                <td class="phon">gi-sul ji-won ji-gwon</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Assistenti amministrativi</td>
-                <td class="korean">행정 지원 직원</td>
-                <td class="phon">haeng-jeong ji-won ji-gwon</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Docente di sostegno</td>
-                <td class="korean">특수 교육 교사</td>
-                <td class="phon">teuk-su gyo-yuk gyo-sa</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Referente per l'inclusione</td>
-                <td class="korean">포용 담당 교사</td>
-                <td class="phon">po-yong dam-dang gyo-sa</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-            <tr>
-                <td>Il DSGA coordina i servizi amministrativi e tecnici della scuola</td>
-                <td class="korean">DSGA는 학교의 행정 및 기술 업무를 총괄합니다</td>
-                <td class="phon">DSGA-neun hak-gyo-ui haeng-jeong mit gi-sul eom-mu-reul chong-gwal-ham-ni-da</td>
-                <td><button class="copyBtn">Copia</button></td>
-            </tr>
-
-        </tbody>
-    </table>
+<section id="amministrazione"><h2>Amministrazione</h2>
+<table><thead><tr><th>Italiano</th><th>한국어</th><th class="phon-col">Fonetica</th><th></th></tr></thead>
+<tbody>
+<tr><td>Segreteria</td><td class="korean">행정실</td><td class="phon">haeng-jeong-shil</td><td><button class="copyBtn">Copia</button></td></tr>
+</tbody>
+</table>
 </section>
 </main>
 
 <button id="totop">▲</button>
 
 <script>
-togglePhon.onclick=()=>content.classList.toggle("hide-phon");
+togglePhon.onclick=()=>{
+  content.classList.toggle("hide-phon");
+  togglePhon.classList.toggle("off");
+  togglePhon.textContent = togglePhon.classList.contains("off")
+    ? "Fonetica"
+    : "Fonetica ✓";
+};
 search.oninput=()=>{const q=search.value.toLowerCase();
 document.querySelectorAll("tbody tr").forEach(tr=>{
  tr.style.display = tr.innerText.toLowerCase().includes(q) ? "" : "none";
@@ -690,7 +627,13 @@ totop.onclick=()=>scrollTo({top:0,behavior:"smooth"});
 <button id="totop">▲</button>
 
 <script>
-togglePhon.onclick=()=>content.classList.toggle("hide-phon");
+togglePhon.onclick=()=>{
+  content.classList.toggle("hide-phon");
+  togglePhon.classList.toggle("off");
+  togglePhon.textContent = togglePhon.classList.contains("off")
+    ? "Fonetica"
+    : "Fonetica ✓";
+};
 search.oninput=()=>{const q=search.value.toLowerCase();
 document.querySelectorAll("tbody tr").forEach(tr=>{
  tr.style.display = tr.innerText.toLowerCase().includes(q) ? "" : "none";
